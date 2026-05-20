@@ -34,3 +34,6 @@ jobs:
             -p 127.0.0.1:5000:5000 \
             --name simple-app \
             simple-docker-app
+            sleep 3
+            curl -f http://127.0.0.1:5000/health
+
